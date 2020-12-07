@@ -1,0 +1,16 @@
+#one{
+    height:100px;
+    width:100px;
+    background-color:red;
+    border:5px solid black;
+    position:relative;
+   -webkit-transition:transform 4s;
+    transition:transform 4s;
+   
+     }
+   #one:hover{
+    -webkit-transform:scale(2,3);
+    transform:scale(2,3);
+    
+        }
+  

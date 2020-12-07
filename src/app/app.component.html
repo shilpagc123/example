@@ -1,0 +1,69 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container-fluid">
+    
+          <nav class="navbar navbar-expand-sm bg-dark navbar-light">
+                <ul class="navbar-nav">
+
+                        &nbsp;&nbsp;
+                        <li class="nav-item ">
+                            <a routerLink="login" class="btn btn-outline-dark" style="color:white">Login<i class="fa fa-user"></i></a>
+                     <!----  <a  routerLink="modal" class="btn btn-outline-dark"style="color:white" data-toggle="modal" data-target="#myModal" >Login <i class="fa fa-user"></i></a>--->
+      
+                       </li>
+
+                  <li class="nav-item active">
+                        <a routerLink="users" class="btn btn-outline-dark" style="color:white">Employees<i class="fa fa-users"></i></a>
+
+                  </li>
+                  &nbsp;&nbsp;
+                  <li class="nav-item ">
+                        <a routerLink="add"  class="btn btn-outline-dark"style="color:white" >Add <i class="fa fa-user-plus"></i></a>
+
+                  </li>
+                 
+                </ul>
+              </nav>
+              <div style = "text-align:center">
+                  <span appChangeText >Welcome to {{title}}.</span>
+               </div>
+
+          <!-----    <div class="modal" id="myModal">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">-->
+                    
+                      <!-- Modal Header -->
+                     <!---- <div class="modal-header">
+                        <h4 class="modal-title">Login</h4>
+                      </div>--->
+                      
+                      <!-- Modal body -->
+                    <!----- <div class="modal-body">
+                        <form>
+                              <div class="form-group">
+                                <label for="emailAddress">Name:</label>
+                                <input  placeholder="Email" name="emailAddress" class="form-control" id="emailAddress" required>
+                              </div> 
+                            
+                              <div class="form-group">
+                                <label for="firstName">Password:</label>
+                                <input  type="password" name="firstName" class="form-control" id="firstName" required>
+                              </div>
+                              <div class="text-center">
+                                    <button type="submit" class="btn btn-success" >Send</button>&nbsp;
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  </div>
+               
+                            </form>  
+                      </div>--->
+                      
+                      <!-- Modal footer-->
+                      
+                  <!---- </div>
+                  </div>
+                </div>--->
+              
+  </div>
+  <router-outlet></router-outlet>
+  
+

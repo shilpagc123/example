@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4 jumbotron">
+      <h2 class="text-center">Edit User</h2>
+      <hr style="border-top: 1px solid black">
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+       <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" >
+        </div>
+      <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+        </div>
+    <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" formControlName="emailAddress" placeholder="Email" name="emailAddress" class="form-control" id="emailAddress">
+        </div>
+  
+        <div class="form-group">
+          <label for="phonenumber">phone number:</label>
+          <input formControlName="phonenumber" placeholder="phonenumber" name="phonenumber" class="form-control" id="phonenumber">
+        </div>
+    
+  
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="form-control">
+              <label class="radio-inline">
+                  <input type="radio" value="male" name="gender"
+                  formControlName="gender">Male
+              </label>
+              <label class="radio-inline">
+                      <input type="radio" value="female" name="gender"
+                      formControlName ="gender">Female
+                  </label>
+      
+          </div>
+      </div>
+      
+      <button class="btn btn-success">Update</button>
+      </form>
+  </div>
+  <div class="col-sm-4"></div>
+
+</div>
